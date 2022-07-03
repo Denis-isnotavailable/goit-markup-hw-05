@@ -53,7 +53,7 @@
         <section class="hero section overlay">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-button" type="button">Заказать услугу</button>
+                <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -114,9 +114,32 @@
             <div class="container">
                 <h2 class="direction-title">Чем мы занимаемся</h2>
                 <ul class="direction-list list">
-                    <li class="list-box"><img src="./images/box1.jpg" alt="разработка приложений" width="370"></li>
-                    <li class="list-box"><img src="./images/box2.jpg" alt="разработка мобильных приложений" width="370"></li>
-                    <li class="list-box"><img src="./images/box3.jpg" alt="дизайн" width="370"></li>
+                    <li class="list-box">
+                        <div class="thumb">
+                            <img src="./images/box1.jpg" alt="разработка приложений" width="370">
+                            <div class="item-title">
+                                <h3>Десктопные приложения</h3>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-box">
+                        <div class="thumb">
+                            <img src="./images/box2.jpg" alt="разработка мобильных приложений" width="370">
+                            <div class="item-title">
+                                <h3>Мобильные приложения</h3>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-box">
+                        <div class="thumb">
+                            <img src="./images/box3.jpg" alt="дизайн" width="370">
+                            <div class="item-title">
+                                <h3>Дизайнерские решения</h3>
+                            </div>
+                        </div>                        
+                    </li>
                 </ul>
             </div>
         </section>
@@ -393,5 +416,18 @@
             </div>
         </div>        
     </footer>
+
+    <div class="drop-bg is-hidden" data-modal>
+        <div class="modal">
+            <button class="button" type="button" data-modal-close>
+                <svg class="cross">
+                    <use href="./images/hw-5/symbol-defs-opt.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>        
+    </div>
+
+    <script src="./js/modal.js"></script>
+
 </body>
 </html>
